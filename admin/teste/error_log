@@ -1,0 +1,3 @@
+[18-Apr-2016 14:01:31 America/Chicago] PHP Warning:  require(config.php): failed to open stream: No such file or directory in /home/valltech/public_html/desenvolvimento/admin/teste/seguranca.php on line 9
+[18-Apr-2016 14:01:31 America/Chicago] PHP Warning:  require(config.php): failed to open stream: No such file or directory in /home/valltech/public_html/desenvolvimento/admin/teste/seguranca.php on line 9
+[18-Apr-2016 14:01:31 America/Chicago] PHP Fatal error:  require(): Failed opening required 'config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/valltech/public_html/desenvolvimento/admin/teste/seguranca.php on line 9

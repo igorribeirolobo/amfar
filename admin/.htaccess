@@ -1,0 +1,38 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+DirectoryIndex index.php 
+RewriteRule ^home$ index.php?pag=1 [NC,L]
+RewriteRule ^gerenciamento-contato$ ger_contato.php?pag=2 [NC,L]
+RewriteRule ^gerenciamento-slides$ ger_slides.php?pag=3 [NC,L]
+RewriteRule ^login$ login.php?pag=4 [NC,L]
+RewriteRule ^gerenciamento_textos/([a-z,0-9,A-Z,_-]+)*$ ger_textos.php?secao=$1&pag=5 [NC,L]
+RewriteRule ^gerenciamento_imagens/([a-z,0-9,A-Z,_-]+)*$ ger_imagens.php?secao=$1&pag=9 [NC,L]
+RewriteRule ^gerenciamento_produtos$ ger-produto.php?pag=6 [NC,L]
+RewriteRule ^gerenciamento_parceiros$ ger-parceiros.php?pag=8 [NC,L]
+RewriteRule ^gerenciamento_depoimentos$ ger-depoimentos.php?pag=7 [NC,L]
+RewriteRule ^gerenciamento_usuarios$ ger-usuarios.php?pag=7 [NC,L]
+RewriteRule ^gerenciamento_slidehome$ ger_slidehome.php?pag=11 [NC,L]
+RewriteRule ^gerenciamento_slidesobre$ ger_slidesobre.php?pag=12 [NC,L]
+
+#CONFIGURAÇÕES DE EDITAR
+RewriteRule ^editar-contato/([a-z,0-9,A-Z,_-]+)*$ edit_conf.php?id=$1?pag=2 [NC,L]
+RewriteRule ^editar-slide/([a-z,0-9,A-Z,_-]+)*$ edit-slide.php?id=$1?pag=3 [NC,L]
+RewriteRule ^editar-texto/([a-z,0-9,A-Z,_-]+)*$ edit_txt.php?id=$1?pag=5 [NC,L]
+RewriteRule ^editar-imagem/([a-z,0-9,A-Z,_-]+)*$ edit-imagem.php?id=$1?pag=5 [NC,L]
+RewriteRule ^editar-produto/([a-z,0-9,A-Z,_-]+)*$ edit-produto.php?id=$1?pag=6 [NC,L]
+RewriteRule ^editar-depoimento/([a-z,0-9,A-Z,_-]+)*$ edit-depoimento.php?id=$1?pag=7 [NC,L]
+RewriteRule ^editar-parceiro/([a-z,0-9,A-Z,_-]+)*$ edit-parceiro.php?id=$1?pag=8 [NC,L]
+RewriteRule ^editar-usuario/([a-z,0-9,A-Z,_-]+)*$ edit-usuario.php?id=$1?pag=10 [NC,L]
+RewriteRule ^editar-slidehome/([a-z,0-9,A-Z,_-]+)*$ edit-slidehome.php?id=$1&pag=11 [NC,L]
+RewriteRule ^editar-slidesobre/([a-z,0-9,A-Z,_-]+)*$ edit-slidesobre.php?id=$1&pag=12 [NC,L]
+
+#CONFIGURAÇÕES DE CADASTRAR
+RewriteRule ^cadastrar-slide$ cad_slide.php?pag=3 [NC,L]
+RewriteRule ^cadastrar-produto$ cad-produto.php?pag=6 [NC,L]
+RewriteRule ^cadastrar-depoimento$ cad-depoimento.php?pag=7 [NC,L]
+RewriteRule ^cadastrar-parceiro$ cad-parceiro.php?pag=8 [NC,L]
+RewriteRule ^cadastrar-usuario$ cad-usuario.php?pag=10 [NC,L]
+RewriteRule ^cadastrar-slidehome$ cad_slidehome.php?pag=11 [NC,L]
+RewriteRule ^cadastrar-slidesobre$ cad_slidesobre.php?pag=12 [NC,L]
