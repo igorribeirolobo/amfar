@@ -45,8 +45,8 @@
       
       -->
 
-
-            <!-- <?php
+ <!--
+            <?php
             $i = 0;
             foreach ($slidehome as $sh) {
                 ?> 
@@ -65,12 +65,65 @@
                     <?php
                     $i++;
                 }
-                ?> -->
+                ?> 
 
             
         </div>
     </div>
+   -->
+      
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <?php
+      $i = 0;
+      foreach ($slidehome as $sh) {
+    ?> 
+    <li data-target="#carousel-example-generic" data-slide-to="<?php echo $i;?>" <?php if($i == 0){echo 'class="active" '; }?>></li>
+    <?php
+       $i++;
+       }
+     ?>
+   
+  </ol>
+      
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <?php
+      $i = 0;
+      foreach ($slidehome as $sh) {
+    ?> 
+    <div class="item <?php if($i == 0){echo 'active'; }?>">
+      <img src="<?php echo $sh->sh_imagem; ?>" alt="">
+                            <div class="carousel-caption">
+                                <h1><?php echo $sh->sh_titulo1; ?></h1>
+                                <h1><?php echo $sh->sh_titulo2; ?></h1>
+                                <p><?php echo $sh->sh_titulo3; ?></p>
+                            </div>
+    </div>
+      <?php
+            $i++;
+           }
+          ?>
+    
+    
+    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  
 </section><!-- end of slider section -->
+
+
 <!-- about section -->
 <section class="about text-center" id="about" style="margin-top: 4%;">
     <div class="container">
