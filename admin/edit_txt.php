@@ -43,7 +43,7 @@ $config = crudTexto::getInstance(Conexao::getInstance());
                         </div>
                         <div class="form-group">
                             <label for="txt_texto">Texto</label>
-                            <input type="text" class="form-control" value="<?php echo $reg->txt_texto; ?>" id="txt_texto" placeholder="Digite o Valor" name="txt_texto">
+                            <textarea class="form-control multiline" id="txt_texto" placeholder="Digite o Valor" name="txt_texto"><?php echo $reg->txt_texto; ?></textarea>
                         </div>
                     </div>
                     <div class="box-footer">

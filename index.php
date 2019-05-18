@@ -417,11 +417,12 @@
         <div class="row">
             <div class="team-heading text-center">
                 <h2><?php echo $txt[41]; ?></h2>
-                <h4><?php echo $novo_texto[1]; ?></h4>
-                <h4><?php echo $novo_texto[2]; ?></h4>
-                <h4><?php echo $novo_texto[3]; ?></h4>
-                <h4><?php echo $novo_texto[4]; ?></h4>
-                <h4><?php echo $novo_texto[5]; ?></h4>
+                <h4><?php echo $txt[42]; ?></h4>
+                <h4><?php echo $txt[43]; ?></h4>
+                <p> <img src="<?php echo $img_i[16]; ?>" alt="" style="width: 200px; height: 200px;"> <img src="<?php echo $img_i[17]; ?>" alt="" style="width: 200px; height: 200px;"> <img src="<?php echo $img_i[18]; ?>" alt="" style="width: 200px; height: 200px;"> <img src="<?php echo $img_i[19]; ?>" alt="" style="width: 200px; height: 200px;"> <img src="<?php echo $img_i[20]; ?>" alt=""style="width: 200px; height: 200px;"></p>
+                <h4><?php echo $txt[44]; ?></h4>
+                <h4><?php echo $txt[45]; ?></h4>
+                <p><img src="<?php echo $img_i[21]; ?>" alt="" style="width: 200px; height: 200px;"></p>
             </div>
 
         </div>
